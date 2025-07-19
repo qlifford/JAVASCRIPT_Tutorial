@@ -16,10 +16,14 @@ const person = {
 }
 // console.log(person)
 
-document.querySelector('.click-me').addEventListener('click', () => {
-    const title = document.querySelector('.title');
-    title.style.color = 'red';
-    title.textContent = 'Hello Cliff';
-    title.classList.add('new-class');
-    console.log("Button clicked");
+// document.querySelector('.click-me').addEventListener('click', () => {
+document.querySelector('.submit').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent form submission
+    let y = document.querySelector('.fname').value;
+    let x = document.querySelector('.lname').value;
+    let fulname = `${y} ${x}`;
+    fulname = fulname.toString();  // Convert fulname to string if needed
+    // fulname.style.color = 'red'; // Change color of fulname
+    alert(`Hello ${fulname}, Welcome to JavasScript`);
 });
+console.log(Name)

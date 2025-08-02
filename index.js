@@ -1,29 +1,20 @@
-// Comment
+  // const elText = document.querySelector('.hidden');
+  // const btnSubmit = document.querySelector('.submit');
+  // const fm = document.querySelector('.form');
 
-// console.log("Welcome to Javascript");
+  // fm.addEventListener('submit', e => {
+  //   e.preventDefault();
+  //   const fmData = new FormData(fm)
+  //   const obj = Object.fromEntries(fmData);
 
-// variables
-const Name = 'cliff'; //string literal
-const Age = 45; //number literal
-const IsActive = true; //boolean literal
-let firstName; //Undefined literal
-const selectColor = 'blue'; //null literal
+  //   alert(`Hello ${obj.fname} ${obj.lname}`);
+  //   elText.innerHTML = `Welcome ${obj.lname}!`;
+  //   elText.style.color = 'red';
+  //   console.log(fmData);
+  //   console.log(obj);
+  
+  // });
 
-// Objects
-const person = {
-    name: 'Cliff',
-    age: 34
+for (let i = 0; i < 5; i++) {
+  console.log("*");
 }
-// console.log(person)
-
-// document.querySelector('.click-me').addEventListener('click', () => {
-document.querySelector('.submit').addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent form submission
-    let y = document.querySelector('.fname').value;
-    let x = document.querySelector('.lname').value;
-    let fulname = `${y} ${x}`;
-    fulname = fulname.toString();  // Convert fulname to string if needed
-    // fulname.style.color = 'red'; // Change color of fulname
-    alert(`Hello ${fulname}, Welcome to JavasScript`);
-});
-console.log(Name)

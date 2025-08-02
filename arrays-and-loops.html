@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+</head>
+<body>
+  
+  <script>
+    const numbers = [1, 2, 3, 4, [5, 6]]; // Initializing an array with numbers
+
+    console.log("Original array:", numbers);
+    console.log("First value:", numbers[0]);
+
+    numbers[0] = 22; // Changing the first element of the array
+    console.log("Updated first value:", numbers[0]);
+
+    numbers.push(6);// Adding a new element at the end of the array
+    console.log("Array after push:", numbers);
+
+    numbers.pop(); // Removing the last element of the array
+    console.log("Array after pop:", numbers);
+
+    numbers.splice(2, 2); // Removing the element at index 2
+    console.log("Array after splice:", numbers);
+
+    numbers.splice(2, 0, 99); // Adding a new element at index
+    numbers.unshift(0); // Adding a new element at the beginning of the array
+    console.log("Array after unshift:", numbers);
+
+    numbers.shift(); // Removing the first element of the array
+    console.log("Array after shift:", numbers);
+    
+    console.log("Is array:", Array.isArray(numbers));// Checking if numbers is an array
+    console.log("Array length:", numbers.length); // Getting the length of the array
+    console.log("Array elements:");
+    // Looping through the array using forEach loop
+    numbers.forEach((num, index) => {
+      console.log(`Element at index ${index}: ${num}`);
+    });
+  </script>
+</body>
+</html>

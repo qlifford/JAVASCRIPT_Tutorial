@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>result</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container py-5 text-center">
+    <h1>Form Data</h1>
+    <form class="mb-2">
+      <input type="text" id="username" placeholder="Username" class="text-center w-25"><br>
+      <button type="submit" onclick="" class="mt-2 w-25 btn btn-primary">Submit</button>
+    </form>
+    <div class="message"></div>
+  </div>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+      const username = document.getElementById('username').value.trim();
+      const input = document.getElementById('username').value.trim();
+      msg = document.querySelector('.message');
+      if (username === '') {
+        alert('Please enter a username');
+        return;
+      }
+      username.innerHTML = '';
+      msg.innerHTML = 'Hello ' + username + ' !';
+      msg.style.color = "red";
+      msg.style.fontSize = "20px";
+      msg.style.fontWeight = "bold";
+      msg.style.textAlign = "center";
+      msg.style.marginTop = "20px";
+      msg.style.borderRadius = "10px";
+      msg.style.padding = "10px";
+    });
+  </script>
+
+</body>
+</html>

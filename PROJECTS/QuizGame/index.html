@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz_game</title>
+  <link rel="stylesheet" href="/PROJECTS/QuizGame/style.css">
+  <script src="/PROJECTS/QuizGame/script.js" defer></script>
+
+</head>
+<body>
+
+  <div class="container-main">
+
+    <!-- Start screen -->
+    <div class="screen active" id="start-screen">
+      <h1>Gquiz!</h1>
+      <p>Welcome to the Quiz Game</p>
+      <button class="start-btn btn btn-warning" id="start-btn">Start!</button>
+    </div>
+
+    <!-- Questions screen -->
+    <div class="screen" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="quiz-text">Questions goes here</h2>
+        <div class="quiz-info">
+          <p>Question <span id="current-quiz">1</span> of <span id="tatal-quiz">5</span></p>
+          <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <div id="answ-container" class="answ-container">
+          <!-- answers goes here from js -->
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Results screen -->
+    <div class="screen" id="result-screen">
+        <h1 class="quiz-result"></h1>
+      <p>Your score: <span class="final-score">1</span> out of <span id="max-score">5</span></p>
+      <div id="result-msg">Nice try!</div>
+      <button id="restart-btn">Play again?</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

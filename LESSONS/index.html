@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/LESSONS/intro.js" defer></script>
+</head>
+<body>
+  <center>
+    <h1>Javascript Classes</h1>
+    <p>Welcome to a complete javascript course</p>
+    <p>These buttons show the three ways to include javascript('inline', 'internal' and 'external')</p>
+
+    <button onclick="{alert('Hello World from inline js')}">Inline javascript button</button> <!-- This button will trigger an alert. inline script -->
+    <button onclick="showAlert()">External jaavascript button</button> <!-- This button will trigger an alert. inline script -->
+    <button class="alertBtn">External jaavascript button</button>
+  </center>
+
+  <!-- The function showAlert is defined in the intro.js file -->
+  <script>
+    showAlert = function() {
+      alert("Hello, World from internal script!");    
+      console.log("This is a console log message from the internal script.");   
+    };
+  </script>
+  
+</body>
+</html>
